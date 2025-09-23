@@ -4,12 +4,12 @@ from netmiko import ConnectHandler
 
 # Настройки коммутатора
 device = {
-    "device_type": "cisco_ios",
-    "host": "192.168.1.10",
-    "username": "admin",
-    "password": "cisco",
-    "secret": "cisco",
-    "port": 22,
+    "device_type": "generic_telnet",
+    "host": "172.16.6.244",
+    "username": "ertine",
+    "password": "admin",
+    "secret": "enable_password",
+    "port": 23,
     "interface": "fa0/1",
     "action": "mode",      # shutdown / no shutdown / mode
     "mode": "access",      # access / trunk
